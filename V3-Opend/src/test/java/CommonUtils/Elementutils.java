@@ -28,9 +28,7 @@ public class Elementutils {
 		
 		return webelement;
 	}
-	
-	
-	
+
 	public void clickOnElement(WebElement element, long durationInSeconds ) {
 		WebElement clickonelement = waitForElement(element, durationInSeconds);
 		clickonelement.click();
@@ -42,7 +40,11 @@ public class Elementutils {
 		scrollbar.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 	
-	
+	public void javascriptbyscrollbar1(List<WebElement> element , long durationInseconds ) {
+		JavascriptExecutor scrollbar = (JavascriptExecutor) driver;
+		scrollbar.executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+
 	public void waitforvisibilityofelement(WebElement element1, Duration time ) {
 		WebDriverWait wait = new WebDriverWait(driver, time);
 		wait.until(ExpectedConditions.visibilityOf(element1));

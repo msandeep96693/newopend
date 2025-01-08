@@ -23,7 +23,7 @@ public class Myhooks extends Drivertest {
 	@Before
 	public static void setup() {
 		
-		Drivertest.initialiseBrowser("firefox");
+		Drivertest.initialiseBrowser("chrome");
 //		driver=Drivertest.getDriver();
 //		driver.get("https://v3opend.tech-active.com/auth/admin_login");
 		

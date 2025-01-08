@@ -3,8 +3,8 @@ package StepDefinitions;
 import org.openqa.selenium.WebDriver;
 
 import Base.Drivertest;
+import CommonUtils.CommonBase;
 import Hooks.Myhooks;
-import ObjectPage.CommonBase;
 import ObjectPage.Login1Page;
 import io.cucumber.java.en.*;
 
